@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2 id="Zagolovok">Селектор</h2>
+    <h4>Селектор (h1)-  до чого буде пристасовано правило. До яких тегів, до яких класів, до яких id-ків.<br>
+        Після селекторів йде тіло {} правила, перелік властивостей які ми змінюємо<br></h4>
+        <div class="selectorZatupom">
+            <h3>Селектори за типами</h3>
+            Каскадність - (пристосується останнє правило для селектора)
+        </div>
+        <div class="selectorZatupom">
+            <h3>Звернутись до класу</h3>
+            ( . назва класу ///.text { })
+        </div>
+        <div class="selectorZatupom">
+            <h3>Звернутись до id</h3>
+            (# назва id ///#number{  })
+        </div>
+        <div class="selectorZatupom">
+            <h3> Поєднувати між собою декілько типів селекторів</h3>
+            (p.text{}    spun#number{})
+        </div>
+        <div class="selectorZatupom">
+            <h3>Кастомні атрибути тегів</h3>
+        </div>     
+            <h3 class="Viravnivanie selectorZatupom">Вага селекторів</h3>
+            <ul id="Spisok">
+                <li> tag name - 0001</li>
+                <li> class name - 0010</li>
+                <li> id name - 0100</li>
+                <li> inline style - 1000</li>
+                <li> inline style - 1000</li>
+                <li> important - 10 000</li>
+            </ul>              
+            <h3 class="Viravnivanie selectorZatupom">Псевдокласи, псевдоелементи</h3>
+                <li>
+                    <a> Псевдоклас        h1:hover {  }</a>
+                </li>
+                <li>
+                    <a> Псевдоелемент     h1::first letter {  }</a>
+                </li>
+            <h3 class="Viravnivanie selectorZatupom">Загальний селектор</h3>
+            <h4>* {  } завжди на початку файлу. Обнулити defoltni значення якихось елементів</h4>
+            <h2>Спадкування - деякі властивості спадкуються від батька</h2>
+            <p>За рівнем вкладенності<br>
+                body .text{    }
+                body>div>.text></p>            
+</body>
+</html>
